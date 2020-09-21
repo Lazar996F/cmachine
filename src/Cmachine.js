@@ -116,6 +116,7 @@ class Cmachine extends Component {
     machineCoins.forEach((element, index) => {
       sumCoinsInMachine += element * coins[index];
     });
+
     if (sumCoinsInMachine < backMoney) {
       backMoney = 0;
       this.setState({notEnoughMachineCoins:true});
@@ -238,6 +239,7 @@ class Cmachine extends Component {
 
     return (
       <div>
+        <h1>Build by Lazar Furtula</h1>
         <div className="Random">
           <button
             type="button"
